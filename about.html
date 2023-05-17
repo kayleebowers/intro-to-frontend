@@ -9,6 +9,14 @@
       rel="icon"
       href="https://www.wikipedia.org/static/favicon/wikipedia.ico"
     />
+    <!--link to normalize-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--link to Oswald and Source Serif Pro font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <!--link to style sheet-->
+    <link rel="stylesheet" type="text/css" href="css/styles.css">
   </head>
   <body>
     <!--logo and nav-->
@@ -18,15 +26,15 @@
         alt="placeholder logo for my portfolio"
       />
       <nav>
-        <ul role="menubar">
+        <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a href="index.html" role="menuitem">Home</a>
+            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem">About Me</a>
+            <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About Me</a>
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem">Contact</a>
+            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
           </li>
         </ul>
       </nav>
