@@ -11,21 +11,64 @@
     />
   </head>
   <body>
-    <div class="header">
-      <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="logo" />
-      <ul>
-        <li>
-          <a href="index.html">Home</a>
-        </li>
-        <li>
-          <a href="about.html">About</a>
-        </li>
-        <li>
-          <a href="contact.html">Contact</a>
-        </li>
-      </ul>
-    </div>
-    <div class="body"></div>
-    <div class="footer"></div>
+    <!--logo and nav-->
+    <header id="header">
+      <img src="https://placehold.co/600x400/000000/FFFFFF/png" alt="placeholder logo for my portfolio" />
+      <nav>
+        <ul role="menubar">
+          <li role="presentation">
+            <a href="index.html" role="menuitem">Home</a>
+          </li>
+          <li role="presentation">
+            <a href="about.html" role="menuitem">About Me</a>
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <!--about me and table of skills-->
+      <h1>Hi, I'm Kaylee</h1>
+      <p>
+        I am a web developer from Tucson, Arizona, who currently lives in Dallas, Texas. When I am not coding, you can find me going on long walks, reading on my Kindle, or baking something new.
+      </p>
+      <h2>Web development skills</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Skills</th>
+            <th>Years of Experience</th>
+            <th>Level of Expertise</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>1</td>
+            <td>Intermediate</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>1</td>
+            <td>Beginner</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>1</td>
+            <td>Intermediate</td>
+          </tr>
+        </tbody>
+      </table>
+    </main>
+    <!--footer with socials-->
+    <footer class="footer">
+      <p>Find me on:</p>
+      <img src="../img/github.svg" alt="Github icon" />
+      <img src="../img/linkedin.svg" alt="LinkedIn icon" />
+      <img src="../img/twitter.svg" alt="Twitter icon" />
+    </footer>
+    <script src="../js/tota11y.js"></script>
   </body>
 </html>
