@@ -9,32 +9,60 @@
       rel="icon"
       type="image/x-icon"
       href="/img/favicon.ico"
-    <!--link to normalize-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+      <!--link
+      to
+      normalize--
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+      integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--link to Oswald and Source Serif Pro font-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;500&family=Source+Serif+Pro:ital,wght@0,300;0,400;0,700;1,600&display=swap"
+      rel="stylesheet"
+    />
     <!--link to style sheet-->
-    <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
   </head>
   <body>
-    <!--logo and nav-->
-    <header id="header">
+    <!--header with logo and main nav-->
+    <header class="page-header">
       <img
-        src="https://placehold.co/600x400/000000/FFFFFF/png"
-        alt="placeholder logo for my portfolio"
+        src="/img/site-logo.jpg"
+        alt="logo with name Kaylee Bowers"
+        class="page-header__item"
       />
-      <nav>
+      <!-- main nav-->
+      <nav class="page-header__item">
         <ul role="menubar" class="navigation-list">
           <li role="presentation">
-            <a href="index.html" role="menuitem" class="navigation-list__item">Home</a>
+            <a
+              href="index.html"
+              role="menuitem"
+              class="navigation-list__item navigation-list__item--active"
+              >Home</a
+            >
           </li>
           <li role="presentation">
-            <a href="about.html" role="menuitem" class="navigation-list__item navigation-list__item--active">About Me</a>
+            <a href="about.html" role="menuitem" class="navigation-list__item"
+              >About Me</a
+            >
           </li>
           <li role="presentation">
-            <a href="contact.html" role="menuitem" class="navigation-list__item">Contact</a>
+            <a href="work.html" role="menuitem" class="navigation-list__item"
+              >Projects</a
+            >
+          </li>
+          <li role="presentation">
+            <a href="contact.html" role="menuitem" class="navigation-list__item"
+              >Contact</a
+            >
           </li>
         </ul>
       </nav>
@@ -75,12 +103,14 @@
         </tbody>
       </table>
     </main>
-    <!--footer with socials-->
+    <!--footer-->
     <footer class="page-footer">
       <p>Find me on:</p>
-      <img src="../img/github.svg" alt="Github icon" class="img__icon" />
-      <img src="../img/linkedin.svg" alt="LinkedIn icon" class="img__icon" />
-      <img src="../img/twitter.svg" alt="Twitter icon" class="img__icon" />
+      <div class="social-media">
+        <img src="../img/github.svg" alt="Github icon" class="img__icon" />
+        <img src="../img/linkedin.svg" alt="LinkedIn icon" class="img__icon" />
+        <img src="../img/twitter.svg" alt="Twitter icon" class="img__icon" />
+      </div>
     </footer>
     <script src="../js/tota11y.js"></script>
   </body>
