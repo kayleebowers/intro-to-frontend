@@ -4,11 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Exercise 1.2</title>
+    <title>Kaylee Bowers</title>
     <link
       rel="icon"
-      href="https://www.wikipedia.org/static/favicon/wikipedia.ico"
-    />
+      type="image/x-icon"
+      href="/img/favicon.ico"
     <!--link to normalize-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--link to Oswald and Source Serif Pro font-->
@@ -42,12 +42,12 @@
     <!--contact form and personal info-->
     <main>
       <h1>Contact Me</h1>
-      <div>
-        <form action="" method="post" id="contact-form">
+      <div class="div__contact-form">
+        <form action="" method="post">
           <label for="email" class="standard-label">*Email: </label>
-          <input type="email" id="email" required />
+          <input type="email" id="email" class="div__contact-form--input" required />
           <label for="phone" class="standard-label">Phone (optional): </label>
-          <input type="tel" name="phone" id="phone" />
+          <input type="tel" name="phone" id="phone" class="div__contact-form--input" />
           <label for="message" class="standard-label">*Message: </label>
           <textarea
             name="message"
@@ -57,8 +57,9 @@
             rows="10"
             required
             placeholder="Enter message here"
+            class="div__contact-form--input"
           ></textarea>
-          <button type="submit">Send message</button>
+          <button type="submit" class="button__primary">Send message</button>
         </form>
         <p>Address:</p>
         <p>
@@ -75,11 +76,11 @@
         <a href="skype:#">Skype</a>
       </div>
     </main>
-    <footer class="footer">
+    <footer class="page-footer">
       <p>Find me on:</p>
-      <img src="../img/github.svg" alt="Github icon" />
-      <img src="../img/linkedin.svg" alt="LinkedIn icon" />
-      <img src="../img/twitter.svg" alt="Twitter icon" />
+      <img src="../img/github.svg" alt="Github icon" class="img__icon" />
+      <img src="../img/linkedin.svg" alt="LinkedIn icon" class="img__icon" />
+      <img src="../img/twitter.svg" alt="Twitter icon" class="img__icon" />
     </footer>
     <script src="../js/tota11y.js"></script>
   </body>

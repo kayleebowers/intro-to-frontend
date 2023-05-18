@@ -3,6 +3,9 @@ Main colors:
 Background color: whitesmoke #F5F5F5
 Primary button: Taupe gray #96858F
 Font color: Black #000
+Visited link and links: slate gray 
+#6D7993—darker version that passes contrast #52576F
+#96858F—darker version that passes contrast #5F535B
 
 Future options:
 Slate gray #6D7993
@@ -11,11 +14,13 @@ Timber wolf #D5D5D5
 
 */
 body {
-    background-color: Whitesmoke;
+    background-color: #52576F;
     font-family: 'Source Serif Pro', serif;
     font-weight: 400;
     font-size: 16px;
     line-height: 1.3;
+    margin: 30px 30px;
+    color: #fff;
 }
 
 h1, h2 {
@@ -36,11 +41,11 @@ h2 {
 
 a {
     size: 16px;
-    color: #000;
+    color: #fff;
 }
 
 a:visited {
-    color: #D5D5D5;
+    color: #000;
 }
 
 a:hover, a:focus {
@@ -56,7 +61,7 @@ button {
     font-family: inherit;
     background-color: #9099A2;
     font-size: 16px;
-    color: #000;
+    color: #fff;
     padding: 10px;
     text-decoration: none;
     border-radius: 3px;
@@ -70,9 +75,61 @@ button:hover, button:focus {
 
 .button__secondary {
     background-color: #96858F;
-    color: #000;
+    color: #fff;
   }
 
   .navigation-list__item--active {
     text-decoration: none;
+  }
+
+  .profile {
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: left;
+  }
+
+  .profile__portrait {
+    float: left;
+    display: block;
+    width: 250px;
+    margin-right: 50px;
+    border-radius: 50%;
+  }
+
+  .page-footer {
+    clear: both;
+  }
+
+  .img__icon {
+    display: inline-block;
+    height: 2.5%;
+    width: 2.5%;
+  }
+
+  .div__contact-form {
+    padding: 40px 20px;
+  }
+  .div__contact-form, .div__contact-form a {
+    background-color: #5F535B;
+    color: white;
+  }
+  .div__contact-form form {
+    margin: 0 auto;
+    max-width: 700px;
+    text-align: left;
+    background-color: #5F535B;
+  }
+
+  .div__contact-form input, textarea {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+  }
+
+  .button__primary {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #96858F;
+    color: white;
   }
