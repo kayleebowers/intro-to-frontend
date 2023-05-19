@@ -92,8 +92,9 @@ a:active {
 
 /* buttons */
 
-button {
+.button {
     border: none;
+    display: inline-block;
     font-family: inherit;
     background-color: #9099A2;
     font-size: 16px;
@@ -102,9 +103,11 @@ button {
     text-decoration: none;
     border-radius: 3px;
     border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+    margin: 10px;
+    transition: opacity 0.2s;
 }
 
-button:hover, button:focus {
+button:hover, button:focus, .button:focus, .button:hover {
     cursor: pointer;
     opacity: 0.8;
 }
@@ -213,4 +216,32 @@ button:hover, button:focus {
 
   .grid__item h2 {
     text-align: center;
+  }
+
+  /* media queries for various sizes */
+
+  @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (max-width: 750) {
+    .grid {
+      grid-gap: 10px;
+    }
+    .grid__item:last-child {
+      grid-column: auto / auto;
+      grid-row: auto / auto;
+    }
+    h1 {
+      font-size: 22px;
+    }
   }
