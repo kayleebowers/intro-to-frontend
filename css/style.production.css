@@ -1,0 +1,407 @@
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v8.4.14,
+* Autoprefixer: v10.4.7
+* Browsers: last 4 version
+*/
+
+* {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  html {
+      background-color: #52576F;
+      font-family: 'Source Serif Pro', serif;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.3;
+      color: #F5F5F5;
+      min-height: 90%;
+      margin-bottom: 100px;
+  }
+  body {
+      background-color: #52576F;
+      font-family: 'Source Serif Pro', serif;
+      font-weight: 400;
+      font-size: 17px;
+      line-height: 1.3;
+      color: #F5F5F5;
+      min-height: 90%;
+      margin-bottom: 100px;
+  }
+  
+  h1, h2 {
+      font-weight: 700;
+      font-family: 'Oswald', sans-serif;
+      line-height: 1.6;
+  }
+  
+  h1 {
+      font-size: 30px;
+      font-style: oblique;
+  }
+  
+  h2 {
+      font-size: 24px;
+      font-variant: small-caps;
+  }
+  
+  /* header with logo and main nav*/
+  
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background-color: #6D7993;
+    border-bottom: 1px solid #F5F5F5;
+  }
+  
+  .page-header__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 200px;
+            flex: 0 1 200px;
+  }
+  
+  .page-header .page-header__item:last-child {
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    text-align: right;
+  }
+  
+  .navigation-list, .skills-list {
+    list-style-type: none;
+  }
+  
+  .navigation-list {
+    margin-right: 3%;
+  }
+  
+  .navigation-list li {
+    display: inline-block;
+    margin-left: 15px;
+  }
+  
+  .page-header__item:first-child {
+    width: 20%;
+    height: 4%;
+    padding: 1%;
+  }
+  
+  /* nav bar */
+  
+  .navigation-list__item:active {
+    text-decoration: none;
+  }
+  
+  /* hyperlinks */
+  
+  a {
+      size: 17px;
+      color: #F5F5F5;
+  }
+  
+  a:hover, a:focus {
+      text-decoration: none;
+  }
+  
+  a:active {
+      color: black;
+      text-decoration: none;
+  }
+  
+  /* buttons */
+  
+  .button {
+      border: none;
+      display: inline-block;
+      font-family: inherit;
+      background-color: #9099A2;
+      font-size: 17px;
+      color: #F5F5F5;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 3px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      margin: 10px;
+      -webkit-transition: opacity 0.2s;
+      -o-transition: opacity 0.2s;
+      transition: opacity 0.2s;
+      width: 200px;
+      height: 40px;
+  }
+  
+  .skills__button {
+      border: none;
+      display: inline-block;
+      font-family: inherit;
+      background-color: #9099A2;
+      font-size: 17px;
+      color: #F5F5F5;
+      padding: 10px;
+      text-decoration: none;
+      border-radius: 3px;
+      border-bottom: 2px solid rgba(0, 0, 0, 0.3);
+      margin: 10px;
+      -webkit-transition: opacity 0.2s;
+      -o-transition: opacity 0.2s;
+      transition: opacity 0.2s;
+      width: 200px;
+      height: 40px;
+  }
+  
+  button:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      background-color: #96858F;
+      -webkit-transition: background-color 1s linear;
+      -o-transition: background-color 1s linear;
+      transition: background-color 1s linear;
+  }
+  
+  button:focus {
+      cursor: pointer;
+      opacity: 0.8;
+      background-color: #96858F;
+      -webkit-transition: background-color 1s linear;
+      -o-transition: background-color 1s linear;
+      transition: background-color 1s linear;
+  }
+  
+  .button:focus {
+      cursor: pointer;
+      opacity: 0.8;
+      background-color: #96858F;
+      -webkit-transition: background-color 1s linear;
+      -o-transition: background-color 1s linear;
+      transition: background-color 1s linear;
+  }
+  
+  .button:hover {
+      cursor: pointer;
+      opacity: 0.8;
+      background-color: #96858F;
+      -webkit-transition: background-color 1s linear;
+      -o-transition: background-color 1s linear;
+      transition: background-color 1s linear;
+  }
+  
+  .button__secondary {
+      background-color: #96858F;
+      color: #fff;
+    }
+  
+  .button__secondary:hover {
+    background-color: #9099A2;
+    -webkit-transition: background-color 1s linear;
+    -o-transition: background-color 1s linear;
+    transition: background-color 1s linear;
+  }
+  
+  .button__secondary:focus {
+    background-color: #9099A2;
+    -webkit-transition: background-color 1s linear;
+    -o-transition: background-color 1s linear;
+    transition: background-color 1s linear;
+  }  
+  
+    /* home page profile */
+  
+    .main-profile {
+      width: 100vw;
+      height: 75vh;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+    }
+  
+    .profile {
+      max-width: 800px;
+      margin: auto;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      width: 100%;
+    }
+  
+    .profile__item {
+      margin: 5%;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+  
+    .profile__portrait {
+      float: left;
+      display: block;
+      width: 400px;
+      margin-right: 50px;
+      border-radius: 50%;
+    }
+  
+    /* footer */
+  
+    .page-footer {
+      clear: both;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      text-align: center;
+      background-color: #6D7993;
+      width: 100%;
+      margin: 0;
+      position: fixed;
+      bottom: 0;
+      border-top: 1px solid #F5F5F5;
+    }
+  
+    .img__icon {
+      display: inline-block;
+      height: 2.5%;
+      width: 2.5%;
+    }
+  
+    /* about me page */
+  
+    .hometown_graphic {
+      width: 15%;
+      display: block;
+    }
+  
+    .skills__button, .hometown_graphic {
+      margin: 10px auto;
+    }
+  
+    .skills, .skills-list {
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  
+    .skills-list, .skills-list__item {
+      padding: 0;
+      margin: 0;
+    }
+  
+    /* about me animation */
+  
+    .cactus {
+      width: 35%;
+    }
+  
+    @-webkit-keyframes color-change {
+      from {
+        fill: #a9ed55;
+      }
+      to {
+        fill: #1458f7;
+      }
+    }
+  
+    @keyframes color-change {
+      from {
+        fill: #a9ed55;
+      }
+      to {
+        fill: #1458f7;
+      }
+    }
+  
+    #path3659, #path3971, #path3663, #path3657 {
+      -webkit-animation: 4s color-change infinite alternate linear;
+              animation: 4s color-change infinite alternate linear;
+    }
+  
+    /* contact form */
+  
+    .div__contact-form {
+      padding: 40px 20px;
+    }
+    .div__contact-form {
+      color: #F5F5F5;
+    }
+    .div__contact-form a {
+      color: #F5F5F5;
+    }
+    .div__contact-form form {
+      margin: 0 auto;
+      max-width: 700px;
+      text-align: left;
+    }
+  
+    .div__contact-form input, textarea {
+      display: block;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+  
+    form .button:last-of-type {
+      display: block;
+      margin: 20px auto;
+    }
+  
+    .required {
+      color: #96858F;
+      font-weight: 800;
+    }
+  
+    /* projects grid */
+  
+    .grid-section h1 {
+      text-align: center;
+    }
+    
+    .grid {
+      display: -ms-grid;
+      display: grid;
+      -ms-grid-columns: 1fr 20px 1fr 20px 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+      grid-gap: 20px;
+      margin: 3%;
+    }
+  
+    .grid__item {
+      background-color: #9099A2;
+      padding: 30px;
+      border-radius: 5px
+    }
+  
+    .grid__item h2 {
+      text-align: center;
+    }
+  
+    /* media queries for various sizes */
+  
+    @media all and (max-width: 500px) {
+      .grid {
+        -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+      }
+    }
+  
+    @media all and (min-width: 500px) and (max-width: 750px) {
+      .grid {
+        -ms-grid-columns: 1fr 10px 1fr;
+        grid-template-columns: 1fr 1fr;
+      }
+    }
+  
+    @media all and (max-width: 750) {
+      .grid {
+        grid-gap: 10px;
+      }
+      .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+      }
+      h1 {
+        font-size: 22px;
+      }
+    }
