@@ -129,6 +129,7 @@ a:active {
     transition: opacity 0.2s;
     width: 200px;
     height: 40px;
+    text-align: center;
 }
 
 button:hover, button:focus, .button:focus, .button:hover {
