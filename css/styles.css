@@ -203,6 +203,10 @@ button:hover, button:focus, .button:focus, .button:hover {
     width: 2.5%;
   }
 
+  .page-footer a {
+    text-decoration: none;
+  }
+
   /* about me page */
 
   .hometown_graphic {
