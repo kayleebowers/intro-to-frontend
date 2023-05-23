@@ -286,11 +286,18 @@ button:hover, button:focus, .button:focus, .button:hover {
   .grid__item {
     background-color: var(--light-gray-color);
     padding: 30px;
-    border-radius: 5px
+    border-radius: 5px;
   }
 
   .grid__item h2 {
     text-align: center;
+  }
+
+  .grid__item--img {
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    border-radius: 5px;
   }
 
   /* media queries for various sizes */
