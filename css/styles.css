@@ -296,6 +296,8 @@ button:hover, button:focus, .button:focus, .button:hover {
     background-color: var(--light-gray-color);
     padding: 30px;
     border-radius: 5px;
+    position: static;
+    text-align: center;
   }
 
   .grid__item h2 {
@@ -307,6 +309,11 @@ button:hover, button:focus, .button:focus, .button:hover {
     display: block;
     margin: 0 auto;
     border-radius: 5px;
+  }
+
+  .grid__item .button {
+    display: block;
+    margin: 30px auto;
   }
 
   /* media queries for various sizes */
