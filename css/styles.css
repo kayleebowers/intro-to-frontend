@@ -22,9 +22,10 @@ Timber wolf #D5D5D5
   --secondary-color: #F5F5F5;
   --rust-gray-color: #96858F;
   --lighter-background-color: #6D7993;
-  --light-gray-color: #9099A2;
+  --light-gray-color: #C2C4CD;
   --viewport-margin: 3%;
   --main-font-size: 17px;
+  --contrast-font-color: #333333;
 
 }
 html, body {
@@ -120,7 +121,7 @@ a:active {
     font-family: inherit;
     background-color: var(--light-gray-color);
     font-size: var(--main-font-size);
-    color: var(--secondary-color);
+    color: var(--contrast-font-color);
     padding: 10px;
     text-decoration: none;
     border-radius: 3px;
