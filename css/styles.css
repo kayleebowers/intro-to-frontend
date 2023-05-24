@@ -337,6 +337,19 @@ button:hover, button:focus, .button:focus, .button:hover {
   /* media queries for all screen sizes */
 
   @media all and (max-width: 500px) {
+    .grid {
+      grid-template-columns: 1fr;
+      grid-gap: 10px;
+    }
+  }
+
+  @media all and (min-width: 500px) and (max-width: 750px) {
+    .grid {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (max-width: 750px) {
     .profile {
       flex-wrap: wrap;
       align-items: center;
@@ -364,22 +377,6 @@ button:hover, button:focus, .button:focus, .button:hover {
   
     .profile__portrait {
       width: 60%;
-    }
-
-    .grid {
-      grid-template-columns: 1fr;
-      grid-gap: 10px;
-    }
-  }
-
-  @media all and (min-width: 500px) and (max-width: 750px) {
-    .profile {
-      flex-wrap: wrap;
-      align-items: center;
-    }
-    
-    .grid {
-      grid-template-columns: 1fr 1fr;
     }
   }
 
