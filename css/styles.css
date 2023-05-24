@@ -207,6 +207,7 @@ button:hover, button:focus, .button:focus, .button:hover {
     display: inline-block;
     height: 2.5%;
     width: 2.5%;
+    margin: 1px 2.5px 6px 2.5px;
   }
 
   .page-footer a {
