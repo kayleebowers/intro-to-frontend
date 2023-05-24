@@ -315,6 +315,10 @@ button:hover, button:focus, .button:focus, .button:hover {
     border-radius: 5px;
   }
 
+  .grid__item--info {
+    text-align: center;
+  }
+
   .grid__item .button {
     display: block;
     margin: 30px auto;
