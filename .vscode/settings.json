@@ -3,6 +3,7 @@
         "Autoprefixer",
         "blockless",
         "bordercolor",
+        "borderopacity",
         "cscsssc",
         "csssc",
         "cssscsc",
