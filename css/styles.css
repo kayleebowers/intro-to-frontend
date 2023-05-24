@@ -203,8 +203,14 @@ button:hover, button:focus, .button:focus, .button:hover {
     border-top: 1px solid var(--secondary-color);
   }
 
+  .social-media {
+    display: flex;
+    text-align: space-between;
+    align-items: center;
+    margin: 0 auto;
+  }
+
   .img__icon {
-    display: inline-block;
     height: 2.5%;
     width: 2.5%;
     margin: 1px 2.5px 6px 2.5px;
