@@ -203,10 +203,14 @@ button:hover, button:focus, .button:focus, .button:hover {
     border-top: 1px solid var(--secondary-color);
   }
 
-  .img__icon {
+  .img__icon, .fallback {
     display: inline-block;
     height: 2.5%;
     width: 2.5%;
+  }
+
+  .fallback {
+    background-image: url(/img/linkedin-logo-png.png);
   }
 
   .page-footer a {
