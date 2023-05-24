@@ -5,6 +5,7 @@
 * Browsers: last 4 version
 */
 
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -34,6 +35,7 @@ h1, h2 {
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
     line-height: 1.6;
+    text-align: center;
 }
 
 h1 {
@@ -52,8 +54,13 @@ h2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #6D7993;
+  background-color: #6C7593;
   border-bottom: 1px solid #F5F5F5;
+  width: 100%;
+  max-width: 100%;
+  background-size: cover;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .page-header__item {
@@ -62,7 +69,7 @@ h2 {
           flex: 0 1 200px;
 }
 
-.page-header .page-header__item:last-child {
+.page-header__item:last-child {
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
@@ -88,8 +95,6 @@ h2 {
   padding: 1%;
 }
 
-/* nav bar */
-
 .navigation-list__item:active {
   text-decoration: none;
 }
@@ -98,7 +103,7 @@ h2 {
 
 a {
     size: 17px;
-    color: #F5F5F5;
+    color: white;
 }
 
 a:hover, a:focus {
@@ -116,9 +121,9 @@ a:active {
     border: none;
     display: inline-block;
     font-family: inherit;
-    background-color: #9099A2;
+    background-color: #C2C4CD;
     font-size: 17px;
-    color: #F5F5F5;
+    color: #333333;
     padding: 10px;
     text-decoration: none;
     border-radius: 3px;
@@ -136,9 +141,9 @@ a:active {
     border: none;
     display: inline-block;
     font-family: inherit;
-    background-color: #9099A2;
+    background-color: #C2C4CD;
     font-size: 17px;
-    color: #F5F5F5;
+    color: #333333;
     padding: 10px;
     text-decoration: none;
     border-radius: 3px;
@@ -155,7 +160,7 @@ a:active {
 button:hover {
     cursor: pointer;
     opacity: 0.8;
-    background-color: #96858F;
+    background-color: #f9f9fa;
     -webkit-transition: background-color 1s linear;
     -o-transition: background-color 1s linear;
     transition: background-color 1s linear;
@@ -164,7 +169,7 @@ button:hover {
 button:focus {
     cursor: pointer;
     opacity: 0.8;
-    background-color: #96858F;
+    background-color: #f9f9fa;
     -webkit-transition: background-color 1s linear;
     -o-transition: background-color 1s linear;
     transition: background-color 1s linear;
@@ -173,7 +178,7 @@ button:focus {
 .button:focus {
     cursor: pointer;
     opacity: 0.8;
-    background-color: #96858F;
+    background-color: #f9f9fa;
     -webkit-transition: background-color 1s linear;
     -o-transition: background-color 1s linear;
     transition: background-color 1s linear;
@@ -182,26 +187,26 @@ button:focus {
 .button:hover {
     cursor: pointer;
     opacity: 0.8;
-    background-color: #96858F;
+    background-color: #f9f9fa;
     -webkit-transition: background-color 1s linear;
     -o-transition: background-color 1s linear;
     transition: background-color 1s linear;
 }
 
 .button__secondary {
-    background-color: #96858F;
+    background-color: #f9f9fa;
     color: #fff;
   }
 
 .button__secondary:hover {
-  background-color: #9099A2;
+  background-color: #C2C4CD;
   -webkit-transition: background-color 1s linear;
   -o-transition: background-color 1s linear;
   transition: background-color 1s linear;
 }
 
 .button__secondary:focus {
-  background-color: #9099A2;
+  background-color: #C2C4CD;
   -webkit-transition: background-color 1s linear;
   -o-transition: background-color 1s linear;
   transition: background-color 1s linear;
@@ -227,6 +232,10 @@ button:focus {
     width: 100%;
   }
 
+  .profile__item h1 {
+    text-align: left;
+  }
+  
   .profile__item {
     margin: 5%;
     -webkit-box-align: center;
@@ -258,7 +267,7 @@ button:focus {
         -ms-flex-direction: column;
             flex-direction: column;
     text-align: center;
-    background-color: #6D7993;
+    background-color: #6C7593;
     width: 100%;
     margin: 0;
     position: fixed;
@@ -266,10 +275,21 @@ button:focus {
     border-top: 1px solid #F5F5F5;
   }
 
+  .social-media {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 0 auto;
+  }
+
   .img__icon {
-    display: inline-block;
     height: 2.5%;
     width: 2.5%;
+    margin: 1px 2.5px 6px 2.5px;
   }
 
   .page-footer a {
@@ -281,9 +301,6 @@ button:focus {
   .hometown_graphic {
     width: 15%;
     display: block;
-  }
-
-  .skills__button, .hometown_graphic {
     margin: 10px auto;
   }
 
@@ -296,6 +313,11 @@ button:focus {
   .skills-list, .skills-list__item {
     padding: 0;
     margin: 0;
+  }
+
+  .skills__button {
+    margin-top: 30px;
+    margin-bottom: 40px;
   }
 
   /* about me animation */
@@ -357,16 +379,12 @@ button:focus {
   }
 
   .required {
-    color: #96858F;
+    color: #f9f9fa;
     font-weight: 800;
   }
 
   /* projects grid */
 
-  .grid-section h1 {
-    text-align: center;
-  }
-  
   .grid {
     display: -ms-grid;
     display: grid;
@@ -377,15 +395,17 @@ button:focus {
   }
 
   .grid__item {
-    background-color: #9099A2;
     padding: 30px;
     border-radius: 5px;
     position: static;
-    text-align: center;
+    border: 3px solid #F5F5F5;
   }
 
-  .grid__item h2 {
-    text-align: center;
+  .grid__item:hover {
+    background-color: #424659;
+    -webkit-transition: background-color .5s linear;
+    -o-transition: background-color .5s linear;
+    transition: background-color .5s linear;
   }
 
   .grid__item--img {
@@ -395,12 +415,17 @@ button:focus {
     border-radius: 5px;
   }
 
+  .grid__item--info {
+    text-align: center;
+  }
+
   .grid__item .button {
     display: block;
     margin: 30px auto;
+    color: #333333;
   }
 
-  /* media queries for various sizes */
+  /* media queries for all screen sizes */
 
   @media all and (max-width: 500px) {
     .grid {
@@ -414,6 +439,42 @@ button:focus {
     .grid {
       -ms-grid-columns: 1fr 10px 1fr;
       grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @media all and (max-width: 750px) {
+    .profile {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+
+    .profile__item h1 {
+      text-align: center;
+    }
+    
+    .profile__item {
+      margin: 0 auto;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+    }
+
+    .profile__item p {
+      margin-left: 15px;
+      margin-right: 15px;
+      text-align: center;
+    }
+  
+    .profile__portrait, .main-profile a {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .profile__portrait {
+      width: 60%;
     }
   }
 
