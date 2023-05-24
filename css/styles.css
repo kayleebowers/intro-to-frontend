@@ -43,6 +43,7 @@ h1, h2 {
     font-weight: 700;
     font-family: 'Oswald', sans-serif;
     line-height: 1.6;
+    text-align: center;
 }
 
 h1 {
@@ -166,6 +167,10 @@ button:hover, button:focus, .button:focus, .button:hover {
     width: 100%;
   }
 
+  .profile__item h1 {
+    text-align: left;
+  }
+  
   .profile__item {
     margin: 5%;
     align-items: center;
@@ -284,10 +289,6 @@ button:hover, button:focus, .button:focus, .button:hover {
 
   /* projects grid */
 
-  .grid-section h1 {
-    text-align: center;
-  }
-  
   .grid {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -299,17 +300,12 @@ button:hover, button:focus, .button:focus, .button:hover {
     padding: 30px;
     border-radius: 5px;
     position: static;
-    text-align: center;
     border: 3px solid var(--secondary-color);
   }
 
   .grid__item:hover {
     background-color: #424659;
     transition: background-color .5s linear;
-  }
-
-  .grid__item h2 {
-    text-align: center;
   }
 
   .grid__item--img {
