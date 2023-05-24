@@ -20,7 +20,7 @@ Timber wolf #D5D5D5
 :root {
   --primary-color: #52576F;
   --secondary-color: #F5F5F5;
-  --rust-gray-color: #96858F;
+  --rust-gray-color: #f9f9fa;
   --lighter-background-color: #6D7993;
   --light-gray-color: #C2C4CD;
   --viewport-margin: 3%;
@@ -320,6 +320,7 @@ button:hover, button:focus, .button:focus, .button:hover {
   .grid__item .button {
     display: block;
     margin: 30px auto;
+    color: var(--contrast-font-color);
   }
 
   /* media queries for various sizes */
