@@ -333,9 +333,38 @@ button:hover, button:focus, .button:focus, .button:hover {
     color: var(--contrast-font-color);
   }
 
-  /* media queries for various sizes */
+  /* media queries for all screen sizes */
 
   @media all and (max-width: 500px) {
+    .profile {
+      flex-wrap: wrap;
+      align-items: center;
+    }
+
+    .profile__item h1 {
+      text-align: center;
+    }
+    
+    .profile__item {
+      margin: 0 auto;
+      align-items: center;
+    }
+
+    .profile__item p {
+      margin-left: 15px;
+      margin-right: 15px;
+      text-align: center;
+    }
+  
+    .profile__portrait, .main-profile a {
+      display: block;
+      margin: 0 auto;
+    }
+  
+    .profile__portrait {
+      width: 60%;
+    }
+
     .grid {
       grid-template-columns: 1fr;
       grid-gap: 10px;
