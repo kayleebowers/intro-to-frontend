@@ -21,7 +21,7 @@ Timber wolf #D5D5D5
   --primary-color: #52576F;
   --secondary-color: #F5F5F5;
   --rust-gray-color: #f9f9fa;
-  --lighter-background-color: #6D7993;
+  --lighter-background-color: #6C7593;
   --light-gray-color: #C2C4CD;
   --viewport-margin: 3%;
   --main-font-size: 17px;
@@ -102,7 +102,7 @@ h2 {
 
 a {
     size: var(--main-font-size);
-    color: var(--secondary-color);
+    color: white;
 }
 
 a:hover, a:focus {
