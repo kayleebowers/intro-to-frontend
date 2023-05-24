@@ -62,6 +62,9 @@ h2 {
   display: flex;
   background-color: var(--lighter-background-color);
   border-bottom: 1px solid var(--secondary-color);
+  width: 100vw;
+  background-size: cover;
+  flex-wrap: wrap;
 }
 
 .page-header__item {
@@ -91,8 +94,6 @@ h2 {
   height: 4%;
   padding: 1%;
 }
-
-/* nav bar */
 
 .navigation-list__item:active {
   text-decoration: none;
