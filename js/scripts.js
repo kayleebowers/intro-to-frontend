@@ -8,7 +8,19 @@
         let value = email.value;
         let hasAtSign = value.indexOf('@') > -1;
         let hasPeriod = value.indexOf('.') > -1;
-        return value && hasAtSign && hasPeriod;
+
+        if (!value) {
+            showErrorMessage(email, 'Email is required');
+            return false;
+        }
+
+        if (!hasAtSign || !hasPeriod) {
+            showErrorMessage(email, 'Not a valid email');
+            return false;
+        }
+
+        showErrorMessage(emailInput, null);
+        return true;
     }
 
     //error message function
