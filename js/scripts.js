@@ -11,4 +11,15 @@
         return value && hasAtSign && hasPeriod;
     }
 
+    function validateForm() {
+        return validateEmail;
+    }
+
+    form.addEventListener('submit', function (e) {
+        e.preventDefault(); //FORM IS NOT SUBMITTING TO SERVER
+        if (validateForm()) {
+            alert('Success');
+        }
+    });
+
 })();
