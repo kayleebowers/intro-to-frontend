@@ -11,10 +11,31 @@
         return value && hasAtSign && hasPeriod;
     }
 
+    //error message function
+    function showErrorMessage(input, message) {
+        let container = document.querySelector('.div__contact-form');
+
+        //remove existing message
+        let error = container.querySelector('.error-message');
+        if (error) {
+            container.removeChild(error);
+        }
+
+        //add error message
+        if (message) {
+            let error = document.createElement('div');
+            error.classList.add('error-message');
+            error.innerText = message;
+            container.appendChild(error);
+        }
+    }
+
+    //validate form function
     function validateForm() {
         return validateEmail;
     }
 
+    //submit success alert
     form.addEventListener('submit', function (e) {
         e.preventDefault(); //FORM IS NOT SUBMITTING TO SERVER
         if (validateForm()) {
