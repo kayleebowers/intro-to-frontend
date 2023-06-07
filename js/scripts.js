@@ -33,12 +33,17 @@
       return false;
     }
 
-    if (!hasAtSign || !hasPeriod) {
+    if (!hasAtSign) {
       showErrorMessage(email, "Not a valid email");
       return false;
     }
 
-    showErrorMessage(emailInput, null);
+    if (!hasPeriod) {
+      showErrorMessage(email, "Not a valid email");
+      return false;
+    }
+
+    showErrorMessage(email, null);
     return true;
   }
 
