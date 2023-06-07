@@ -279,11 +279,19 @@ button:hover, button:focus, .button:focus, .button:hover {
     text-align: left;
   }
 
-  .div__contact-form input, textarea {
+  .div__contact-form input, textarea, .error-message {
     display: block;
     margin-top: 10px;
     margin-bottom: 10px;
     width: 100%;
+  }
+
+  .error-message {
+    font-size: 16px;
+    padding: 3px;
+    background-color: red;
+    width: 20%;
+    padding-left: 7px;
   }
 
   form .button:last-of-type {
