@@ -48,10 +48,17 @@
   }
 
   //submit success alert
-  form.addEventListener("submit", function (e) {
+  let submitButton = document.querySelector('#contact-form__submit');
+  submitButton.addEventListener("click", function (e) {
     e.preventDefault(); //FORM IS NOT SUBMITTING TO SERVER
     if (validateForm()) {
       alert("Success");
     }
   });
+
+  return {
+    validateEmail,
+    showErrorMessage,
+    validateForm
+  }
 })();
