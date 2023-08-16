@@ -314,7 +314,7 @@ button:hover, button:focus, .button:focus, .button:hover {
   }
 
   .grid__item {
-    padding: 30px;
+    padding: 10px;
     border-radius: 5px;
     position: static;
     border: 3px solid var(--secondary-color);
@@ -326,10 +326,12 @@ button:hover, button:focus, .button:focus, .button:hover {
   }
 
   .grid__item--img {
+    height: 50%;
     width: 100%;
     display: block;
     margin: 0 auto;
     border-radius: 5px;
+    object-fit: contain;
   }
 
   .grid__item--info {
