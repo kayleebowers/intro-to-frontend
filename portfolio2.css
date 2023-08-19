@@ -23,13 +23,21 @@ section, .header-introduction {
   text-align: center;
 }
 
+.header-image {
+  border: 1px solid blue;
+}
+
 .header-name {
   font-size: 3.5em;
   letter-spacing: .6rem;
+  border: 1px solid blue;
 }
 
 .header-title {
-
+  text-transform: uppercase;
+  font-size: 1.5em;
+  letter-spacing: .1rem;
+  border: 1px solid blue;
 }
 
 /* welcome section */
@@ -38,17 +46,29 @@ section, .header-introduction {
   .header-name {
     font-size: 2.5em;
   }  
+
+  .header-title {
+    font-size: 1.3em;
+  }
 }
 
 @media all and (max-width: 500px) {
   .header-name {
     font-size: 2em;
     letter-spacing: .3rem;
-  }  
+  }
+
+  .header-title {
+    font-size: 1em;
+  }
 }
 
 @media all and (max-width: 375px) {
   .header-name {
     font-size: 1.7em;
   }  
+
+  .header-title {
+    font-size: .8em;
+  }
 }
