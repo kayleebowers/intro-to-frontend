@@ -11,6 +11,12 @@ h1, h2, h3 {
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
+h1 {
+  font-size: 2em;
+  letter-spacing: .6rem;
+  text-transform: uppercase;
+}
+
 section, .header-introduction {
   width: 100%;
   padding: 5%;
@@ -20,6 +26,7 @@ section, .header-introduction {
 
 .header-introduction {
   text-align: center;
+  margin-bottom: 7%;
 }
 
 .header-image {
@@ -47,7 +54,13 @@ section, .header-introduction {
   top: 55%;
 }
 
-/* welcome section */
+/* about me */
+
+.about-me {
+  background-color: #F8F8F8;
+}
+
+/* media queries */
 
 @media all and (max-width: 650px) {
   .header-name {
