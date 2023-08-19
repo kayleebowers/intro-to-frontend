@@ -4,8 +4,20 @@ html {
 
 * {
   font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
 }
 
 h1, h2, h3 {
   font-family: 'Hanken Grotesk', sans-serif;
+}
+
+section {
+  width: 100%;
+  padding: 5%;
+  border: 1px solid red;
+}
+/* welcome section */
+
+.welcome {
+
 }
