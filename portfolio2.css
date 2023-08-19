@@ -78,6 +78,19 @@ p {
   grid-gap: 3%;
 }
 
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+li {
+  padding: 20px;
+  background-image: url("./img-v2/check-mark.png");
+  background-repeat: no-repeat;
+  background-position: 1px;
+  padding-left: 50px;
+}
 /* media queries */
 
 @media all and (max-width: 900px) {
@@ -124,6 +137,7 @@ p {
 
   .skills {
     display: block;
+  }
 }
 
 @media all and (max-width: 400px) {
