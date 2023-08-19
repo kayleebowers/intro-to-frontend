@@ -60,6 +60,12 @@ section, .header-introduction {
   background-color: #F8F8F8;
 }
 
+.about-me-image {
+  float: right;
+  width: 35%;
+  padding: 0 0 3% 3%;
+}
+
 /* media queries */
 
 @media all and (max-width: 650px) {
