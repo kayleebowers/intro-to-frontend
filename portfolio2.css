@@ -22,6 +22,10 @@ section, .header-introduction {
   padding: 5%;
 }
 
+p {
+  font-size: 20px;
+}
+
 /* header  */
 
 .header-introduction {
