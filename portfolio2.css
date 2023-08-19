@@ -73,9 +73,8 @@ p {
 /* skills grid */
 
 .skills {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 3%;
+  display: flex;
+  justify-content: space-around;
 }
 
 ul {
@@ -96,6 +95,16 @@ li {
 @media all and (max-width: 900px) {
   .about-me-image {
     width: 50%;
+  }
+
+  .skills {
+    display: block;
+  }
+
+  .skills-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 0 auto;
   }
 }
 
@@ -134,10 +143,6 @@ li {
     font-size: 1em;
     top: 54%;
   }
-
-  .skills {
-    display: block;
-  }
 }
 
 @media all and (max-width: 400px) {
@@ -159,6 +164,10 @@ li {
   .header-image {
     width: 310px;
     margin: 0 auto;
+  }
+
+  .skills-items {
+    grid-template-columns: 1fr;
   }
 }
 
