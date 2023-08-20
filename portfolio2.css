@@ -171,6 +171,7 @@ button, a {
   opacity: 0.6;
   transition: opacity 2s;
   border: 2px solid #313F2E;
+  border-radius: 10px;
 }
 
 .left-project-image:hover {
@@ -192,6 +193,26 @@ button, a {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
+  }
+
+  .left-aligned-project {
+    display: block;
+  }
+
+  .left-project-image {
+    display: none;
+  }
+
+  .left-aligned-project-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-aligned-project-info > p {
+    width: 90%;
+    margin-left: 0;
+    position: static;
   }
 }
 
