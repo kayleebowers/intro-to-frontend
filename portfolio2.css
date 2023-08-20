@@ -90,6 +90,13 @@ li {
   background-position: 1px;
   padding-left: 50px;
 }
+
+/* projects */
+
+.left-project-image {
+  max-width: 750px;
+}
+
 /* media queries */
 
 @media all and (max-width: 900px) {
