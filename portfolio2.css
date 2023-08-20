@@ -110,12 +110,17 @@ button, a {
 
 /* projects */
 
-.left-aligned-project {
+.left-aligned-project, .right-aligned-project {
   display: flex;
   align-items: center;
+  margin: 5% 0;
 }
 
-.left-aligned-project-info {
+.right-aligned-project {
+  flex-direction: row-reverse;
+}
+
+.left-aligned-project-info, .right-aligned-project-info {
   display: flex;
   flex-direction: column;
 }
@@ -124,12 +129,16 @@ button, a {
   text-align: right;
 }
 
-.left-aligned-project-info > h2 {
+.right-aligned-project-info > p, .right-aligned-project-info > h2, .right-aligned-project-info > ul {
+  text-align: left;
+}
+
+.left-aligned-project-info > h2, .right-aligned-project-info > h2 {
   color: #313F2E;
   text-transform: uppercase;
 }
 
-.left-aligned-project-info > p {
+.left-aligned-project-info > p, .right-aligned-project-info > p {
   background-color: #313F2E;
   color: white;
   position: relative;
@@ -142,13 +151,23 @@ button, a {
   border-radius: 10px;
 }
 
-.left-aligned-project-info > ul {
+.left-aligned-project-info > p {
+  right: 20%;
+  margin-left: -20%; 
+}
+
+.right-aligned-project-info > p {
+  left: 20%;
+  margin-right: -20%; 
+}
+
+.left-aligned-project-info > ul, .right-aligned-project-info > ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 
-.left-aligned-project-info > ul > li {
+.left-aligned-project-info > ul > li, .right-aligned-project-info > ul > li {
   display: inline-block;
   background-color: #313F2E;
   color: white;
@@ -163,18 +182,20 @@ button, a {
   text-align: right;
 }
 
-.left-project-image {
-  max-width: 750px;
+.right-aligned-project-links {
+  margin: 7%;
+  text-align: left;
 }
 
-.left-project-image {
+.left-project-image, .right-project-image {
+  max-width: 750px;
   opacity: 0.6;
   transition: opacity 2s;
   border: 2px solid #313F2E;
   border-radius: 10px;
 }
 
-.left-project-image:hover {
+.left-project-image:hover, .right-project-image:hover {
   opacity: 1; 
 }
 
@@ -195,17 +216,17 @@ button, a {
     margin: 0 auto;
   }
 
-  .left-aligned-project {
+  .left-aligned-project, .right-aligned-project {
     display: block;
     border-radius: 10px;
     background-color: white;
   }
 
-  .left-project-image {
+  .left-project-image, .right-project-image {
     display: none;
   }
 
-  .left-aligned-project-info {
+  .left-aligned-project-info, .right-aligned-project-info {
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -214,6 +235,12 @@ button, a {
   .left-aligned-project-info > p {
     width: 90%;
     margin-left: 0;
+    position: static;
+    text-align: center;
+  }
+
+  .right-aligned-project-info > p {
+    width: 90%;
     position: static;
     text-align: center;
   }
