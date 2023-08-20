@@ -197,6 +197,8 @@ button, a {
 
   .left-aligned-project {
     display: block;
+    border-radius: 10px;
+    background-color: white;
   }
 
   .left-project-image {
@@ -213,6 +215,7 @@ button, a {
     width: 90%;
     margin-left: 0;
     position: static;
+    text-align: center;
   }
 }
 
