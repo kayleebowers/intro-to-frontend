@@ -171,7 +171,7 @@ button, a {
   display: inline-block;
   background-color: #313F2E;
   color: white;
-  width:fit-content;
+  width: fit-content;
   padding: 5px;
   margin: 5px 3px;
   border-radius: 10px;
@@ -243,6 +243,20 @@ button, a {
     width: 90%;
     position: static;
     text-align: center;
+  }
+
+  .left-aligned-project-info > ul, .right-aligned-project-info > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .left-aligned-project-info > h2, .right-aligned-project-info > h2 {
+    font-size: 24px;
+    text-align: center;
+    margin-top: 10%;
   }
 }
 
