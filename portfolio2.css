@@ -26,6 +26,17 @@ p {
   font-size: 20px;
 }
 
+button, a {
+  background-color: #313F2E;
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 10px;
+  width: fit-content;
+  border-radius: 10px;
+  border: none;
+}
+
 /* header  */
 
 .header-introduction {
