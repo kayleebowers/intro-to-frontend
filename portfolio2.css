@@ -93,16 +93,36 @@ p {
 
 /* projects */
 
-.left-aligned-project, .left-aligned-project-info {
+.left-aligned-project {
   display: flex;
+  align-items: center;
 }
 
 .left-aligned-project-info {
+  display: flex;
   flex-direction: column;
 }
 
 .left-aligned-project-info > p, .left-aligned-project-info > h2, .left-aligned-project-info > ul {
   text-align: right;
+}
+
+.left-aligned-project-info > h2 {
+  color: #313F2E;
+  text-transform: uppercase;
+}
+
+.left-aligned-project-info > p {
+  background-color: #313F2E;
+  color: white;
+  position: relative;
+  width: 140%;
+  z-index: 3;
+  padding: 4%;
+  right: 20%;
+  margin-left: -20%; 
+  margin-bottom: 7%;
+  border-radius: 10px;
 }
 
 .left-aligned-project-info > ul {
