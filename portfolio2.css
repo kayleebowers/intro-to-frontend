@@ -141,6 +141,11 @@ p {
   border-radius: 10px;
 }
 
+.left-aligned-project-links {
+  margin: 7%;
+  text-align: right;
+}
+
 .left-project-image {
   max-width: 750px;
 }
