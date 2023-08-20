@@ -193,6 +193,8 @@ button, a {
   transition: opacity 2s;
   border: 2px solid #313F2E;
   border-radius: 10px;
+  height: 400px;
+  object-fit: fill;
 }
 
 .left-project-image:hover, .right-project-image:hover {
