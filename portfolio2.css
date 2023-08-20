@@ -26,7 +26,7 @@ p {
   font-size: 20px;
 }
 
-button, a {
+button, button > a {
   background-color: #313F2E;
   color: white;
   text-decoration: none;
@@ -178,13 +178,21 @@ button, a {
 }
 
 .left-aligned-project-links {
-  margin: 7%;
+  margin-top: 7%;
   text-align: right;
 }
 
 .right-aligned-project-links {
-  margin: 7%;
+  margin-top: 7%;
   text-align: left;
+}
+
+.right-aligned-project-links > a, .left-aligned-project-links > a {
+  text-decoration: none;
+}
+
+i {
+  margin: 5px;
 }
 
 .left-project-image, .right-project-image {
