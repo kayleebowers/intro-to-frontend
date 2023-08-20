@@ -77,13 +77,13 @@ p {
   justify-content: space-around;
 }
 
-ul {
+.skills-items {
   list-style-type: none;
   padding: 0;
   margin: 0;
 }
 
-li {
+.skills-items > li {
   padding: 20px;
   background-image: url("./img-v2/check-mark.png");
   background-repeat: no-repeat;
@@ -92,6 +92,34 @@ li {
 }
 
 /* projects */
+
+.left-aligned-project, .left-aligned-project-info {
+  display: flex;
+}
+
+.left-aligned-project-info {
+  flex-direction: column;
+}
+
+.left-aligned-project-info > p, .left-aligned-project-info > h2, .left-aligned-project-info > ul {
+  text-align: right;
+}
+
+.left-aligned-project-info > ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.left-aligned-project-info > ul > li {
+  display: inline-block;
+  background-color: #313F2E;
+  color: white;
+  width:fit-content;
+  padding: 5px;
+  margin: 5px 3px;
+  border-radius: 10px;
+}
 
 .left-project-image {
   max-width: 750px;
