@@ -167,6 +167,16 @@ button, a {
   max-width: 750px;
 }
 
+.left-project-image {
+  opacity: 0.6;
+  transition: opacity 2s;
+  border: 2px solid #313F2E;
+}
+
+.left-project-image:hover {
+  opacity: 1; 
+}
+
 /* media queries */
 
 @media all and (max-width: 900px) {
