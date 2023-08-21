@@ -86,6 +86,10 @@ button, button > a {
   padding-bottom: 15px;
 }
 
+.menu-icon {
+  display: none !important;
+}
+
 /* header  */
 .header-introduction {
   text-align: center;
@@ -252,6 +256,11 @@ i {
 /* media queries */
 
 @media all and (max-width: 900px) {
+
+  .navbar > a {
+    font-size: 18px;
+  }
+
   .about-me-image {
     width: 50%;
   }
@@ -331,6 +340,23 @@ i {
 
   p {
     font-size: 19px;
+  }
+
+  .menu-icon {
+    float: right;
+    display: block !important;
+  }
+
+  .navbar > a:not(:first-child), .navbar-social-icons {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+  }
+
+  .navbar > a:first-child, .menu-icon {
+    margin: 30px;
   }
 }
 
