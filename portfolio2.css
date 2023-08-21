@@ -272,6 +272,37 @@ i {
   opacity: 1; 
 }
 
+/* contact section */
+
+.contact-me {
+  display: flex;
+  align-items: flex-start;
+}
+
+.contact-me-info {
+  padding: 4%;
+  margin-right: 2%;
+  padding-left: 0;
+}
+
+.contact-me-image {
+  border-radius: 10px;
+}
+
+.contact-me-email {
+  display: flex;
+  align-items: center;
+}
+
+.contact-me-email > i {
+  margin-right: 15px;
+}
+
+.contact-me-email > a {
+  text-decoration: underline;
+  color: black;
+}
+
 /* media queries */
 
 @media all and (max-width: 1180px) {
