@@ -68,13 +68,3 @@
     validateForm
   }
 })();
-
-// display responsive navbar
-const showOrHideNav = () => {
-  let navBar = document.getElementById("navbar");
-  if (navBar.className === "navbar") {
-    navBar.className += "-responsive";
-  } else {
-    navBar.className = "navbar";
-  }
-}

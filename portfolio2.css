@@ -343,24 +343,29 @@ i {
   }
 
   .menu-icon {
-    float: right;
+    position: absolute;
     display: block !important;
+    right: 20px;
+    top: 13px;
   }
 
-  .navbar > a:not(:first-child), .navbar-social-icons {
+  .navbar-collapsed, .navbar-social-icons {
     display: none;
   }
 
   .navbar {
-    justify-content: space-between;
+    display: block;
   }
 
   .navbar > a:first-child, .menu-icon {
     margin: 30px;
   }
 
-  .navbar-responsive {
-    border: 1px solid red;
+  .navbar-item-responsive {
+    display: block;
+    float: none;
+    text-align: left;
+    padding-top: 20px;
   }
 }
 

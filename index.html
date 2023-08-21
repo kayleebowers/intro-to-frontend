@@ -16,9 +16,11 @@
   <header>
     <nav class="navbar" id="navbar">
       <a href="#about-me">About Me</a>
-      <a href="#skills">Skills</a>
-      <a href="#projects">Projects</a>
-      <a>Let's Chat</a>
+      <div class="navbar-collapsed">
+        <a href="#skills" class="hide1">Skills</a>
+        <a href="#projects" class="hide">Projects</a>
+        <a class="hide">Let's Chat</a>
+      </div>
       <div class="navbar-social-icons">
         <a href="https://github.com/kayleebowers" target="_blank">
           <i class="fa-brands fa-github fa-2xl" style="color: #ffffff;"></i>
@@ -30,7 +32,7 @@
           <i class="fa-brands fa-codepen fa-2xl" style="color: #ffffff;"></i>
         </a>
       </div>
-      <i class="fa-solid fa-bars fa-2xl menu-icon" style="color: #ffffff;" onClick="showOrHideNavBar()"></i>
+      <i class="fa-solid fa-bars fa-2xl menu-icon" style="color: #ffffff;"></i>
     </nav>
     <div class="header-introduction">
       <img src="./img-v2/code-logo.png" alt="gray circle with code brackets inside" class="header-image">
@@ -224,6 +226,15 @@
       <a href="./portfolio-v1/homepage.html">See version 1</a>
     </button>
   </footer>
-  <script src="./js/scripts.js"></script>
+  <script>
+    const hamburgerButton = document.querySelector(".menu-icon");
+    const navLinks = document.querySelector(".navbar-collapsed");
+    const navSocials = document.querySelector(".navbar-social-icons");
+
+    hamburgerButton.addEventListener("click", () => {
+      navSocials.classList.toggle("navbar-item-responsive");
+      navLinks.classList.toggle("navbar-item-responsive");
+    });
+  </script>
 </body>
 </html>
