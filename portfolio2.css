@@ -59,11 +59,19 @@ button, button > a {
   transition: opacity 2s;
 }
 
+.navbar-collapsed {
+  display: flex;
+  justify-content: space-around;
+  width: 43%;
+  align-items: center;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+
 .navbar:hover {
   opacity: 1;
 }
 
-.navbar > a {
+.navbar > a, .navbar-collapsed > a {
   font-size: 24px;
   text-transform: uppercase;
   margin: 0 3%;
@@ -75,7 +83,7 @@ button, button > a {
   transition: border 1s ease-in;
 }
 
-.navbar > a:hover {
+.navbar > a:hover, .navbar-collapsed > a:hover {
   border: 1px solid white;
   padding: 5px;
   border-radius: 10px;
@@ -257,8 +265,12 @@ i {
 
 @media all and (max-width: 900px) {
 
-  .navbar > a {
+  .navbar > a, .navbar-collapsed > a {
     font-size: 18px;
+  }
+
+  .navbar > a {
+    margin-right: 4%;
   }
 
   .about-me-image {
@@ -361,9 +373,16 @@ i {
     margin: 30px;
   }
 
-  .navbar-item-responsive {
-    display: block;
+  .navbar-links-responsive {
+    display: flex;
+    flex-direction: column;
     float: none;
+    text-align: left;
+    padding-top: 20px;
+  }
+
+  .navbar-icons-responsive {
+    display: block;
     text-align: left;
     padding-top: 20px;
   }

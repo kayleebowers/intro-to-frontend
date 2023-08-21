@@ -17,9 +17,9 @@
     <nav class="navbar" id="navbar">
       <a href="#about-me">About Me</a>
       <div class="navbar-collapsed">
-        <a href="#skills" class="hide1">Skills</a>
-        <a href="#projects" class="hide">Projects</a>
-        <a class="hide">Let's Chat</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a>Let's Chat</a>
       </div>
       <div class="navbar-social-icons">
         <a href="https://github.com/kayleebowers" target="_blank">
@@ -232,8 +232,8 @@
     const navSocials = document.querySelector(".navbar-social-icons");
 
     hamburgerButton.addEventListener("click", () => {
-      navSocials.classList.toggle("navbar-item-responsive");
-      navLinks.classList.toggle("navbar-item-responsive");
+      navSocials.classList.toggle("navbar-links-responsive");
+      navLinks.classList.toggle("navbar-icons-responsive");
     });
   </script>
 </body>
