@@ -563,7 +563,7 @@ footer > h3 {
   }  
 
   .header-title {
-    top: 62%;
+    top: 65%;
     font-size: 1.1em;
   }
 }
@@ -581,18 +581,11 @@ footer > h3 {
   }  
 
   .header-title {
-    top: 63%;
+    top: 70%;
     font-size: .8em;
   }
 
   .skills-items {
     grid-template-columns: 1fr;
-  }
-}
-
-@media all and (max-width: 330px) {
-  .header-title, .header-name {
-    width: 85%;
-    margin-left: -38%;
   }
 }
