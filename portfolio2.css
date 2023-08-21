@@ -558,12 +558,12 @@ footer > h3 {
   }
 
   .header-name {
-    font-size: 2.2em;
+    font-size: 1.8em;
     top: 53%;
   }  
 
   .header-title {
-    top: 65%;
+    top: 67%;
     font-size: 1.1em;
   }
 }
@@ -576,12 +576,12 @@ footer > h3 {
   }
 
   .header-name {
-    font-size: 1.2em;
+    font-size: 1em;
     top: 58%;
   }  
 
   .header-title {
-    top: 70%;
+    top: 73%;
     font-size: .8em;
   }
 
