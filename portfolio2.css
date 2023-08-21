@@ -11,7 +11,7 @@ body {
   margin: 0;
 }
 
-h1, h2, h3 {
+h1, h2, h3, .navbar > a {
   font-family: 'Hanken Grotesk', sans-serif;
 }
 
@@ -49,10 +49,26 @@ button, button > a {
 .navbar {
   background-color: #313F2E;
   width: 100%;
-  padding: 15px;
+  padding: 2%;
   overflow: hidden;
   display: flex;
   color: white;
+  align-items: center;
+  justify-content: center;
+  opacity: .8;
+  transition: opacity 2s;
+  position: fixed;
+  z-index: 4;
+}
+
+.navbar > a {
+  font-size: 24px;
+  text-transform: uppercase;
+  margin: 0 3%;
+}
+
+.navbar:hover {
+  opacity: 1;
 }
 
 /* header  */
