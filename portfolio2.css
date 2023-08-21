@@ -294,7 +294,68 @@ i {
   .header-title {
     top: 62%;
   }
+
+  /* projects */
+
+  .left-aligned-project, .right-aligned-project {
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 0;
+    border: 2px solid #313F2E;
+    border-radius: 10px;
+  }
+
+  .left-aligned-project > a, .right-aligned-project > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-project-image, .right-project-image {
+    width: 90%;
+    border: none;
+    height: auto;
+    border-radius: 10px;
+  }
+
+  .left-aligned-project-info, .right-aligned-project-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .left-aligned-project-info > p {
+    width: 90%;
+    position: static;
+    text-align: center;
+    margin: 10px;
+    margin-left: 0;
+  }
+
+  .right-aligned-project-info > p {
+    width: 90%;
+    position: static;
+    text-align: center;
+    margin: 10px;
+    margin-right: 0;
+  }
+
+  .left-aligned-project-info > ul, .right-aligned-project-info > ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  .left-aligned-project-info > a, .right-aligned-project-info > a {
+    font-size: 24px;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+  }
 }
+
 @media all and (max-width: 900px) {
 
   .navbar > a, .navbar-collapsed > a {
@@ -326,49 +387,6 @@ i {
     display: grid;
     grid-template-columns: 1fr 1fr;
     margin: 0 auto;
-  }
-
-  .left-aligned-project, .right-aligned-project {
-    display: block;
-    border-radius: 10px;
-    background-color: white;
-  }
-
-  .left-project-image, .right-project-image {
-    display: none;
-  }
-
-  .left-aligned-project-info, .right-aligned-project-info {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .left-aligned-project-info > p {
-    width: 90%;
-    margin-left: 0;
-    position: static;
-    text-align: center;
-  }
-
-  .right-aligned-project-info > p {
-    width: 90%;
-    position: static;
-    text-align: center;
-  }
-
-  .left-aligned-project-info > ul, .right-aligned-project-info > ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 5%;
-    margin-left: 5%;
-  }
-
-  .left-aligned-project-info > a, .right-aligned-project-info > a {
-    font-size: 24px;
-    text-align: center;
-    margin-top: 10%;
   }
 }
 
@@ -502,26 +520,6 @@ i {
     top: 63%;
     font-size: .8em;
   }
-
-  /* .header-name {
-    font-size: 1.7em;
-    top: 40%;
-  }  
-
-  .header-title {
-    font-size: .8em;
-    top: 48%;
-  }
-
-  .header-title, .header-name {
-    width: 90%;
-    margin-left: -45%;
-  }
-
-  .header-image {
-    width: 310px;
-    margin: 0 auto;
-  } */
 
   .skills-items {
     grid-template-columns: 1fr;
