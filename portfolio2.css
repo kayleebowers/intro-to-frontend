@@ -385,6 +385,12 @@ i {
     margin: 0;
     padding: 0;
   }
+
+  /* contact */
+  .contact-me {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 @media all and (max-width: 900px) {
@@ -514,6 +520,12 @@ i {
     text-align: left;
     margin-top: 13px;
     margin-left: 22px;
+  }
+
+  /* contact */
+
+  .contact-me-image, .contact-me-info  {
+    width: 90%;
   }
 }
 
