@@ -227,13 +227,15 @@
     </button>
   </footer>
   <script>
+    const navBar = document.querySelector(".navbar");
     const hamburgerButton = document.querySelector(".menu-icon");
     const navLinks = document.querySelector(".navbar-collapsed");
     const navSocials = document.querySelector(".navbar-social-icons");
 
     hamburgerButton.addEventListener("click", () => {
-      navSocials.classList.toggle("navbar-links-responsive");
-      navLinks.classList.toggle("navbar-icons-responsive");
+      navBar.classList.toggle("navbar-responsive");
+      navSocials.classList.toggle("navbar-icons-responsive");
+      navLinks.classList.toggle("navbar-links-responsive");
     });
   </script>
 </body>
