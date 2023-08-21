@@ -32,7 +32,6 @@ p {
 
 a {
   text-decoration: none;
-  color: white;
 }
 
 button, button > a {
@@ -80,6 +79,8 @@ button, button > a {
   text-transform: uppercase;
   margin: 0 3%;
   transition: padding 1s;
+  text-decoration: none;
+  color: white;
 }
 
 .navbar-social-icons {
@@ -189,18 +190,19 @@ button, button > a {
   flex-direction: column;
 }
 
-.left-aligned-project-info > p, .left-aligned-project-info > h2, .left-aligned-project-info > ul {
+.left-aligned-project-info > p, .left-aligned-project-info > a, .left-aligned-project-info > ul {
   text-align: right;
 }
 
-.right-aligned-project-info > p, .right-aligned-project-info > h2, .right-aligned-project-info > ul {
+.right-aligned-project-info > p, .right-aligned-project-info > a, .right-aligned-project-info > ul {
   text-align: left;
 }
 
-.left-aligned-project-info > h2, .right-aligned-project-info > h2 {
+.left-aligned-project-info > a, .right-aligned-project-info > a {
   color: #313F2E;
   text-transform: uppercase;
   font-size: 30px;
+  text-decoration: none;
 }
 
 .left-aligned-project-info > p, .right-aligned-project-info > p {
@@ -363,7 +365,7 @@ i {
     margin-left: 5%;
   }
 
-  .left-aligned-project-info > h2, .right-aligned-project-info > h2 {
+  .left-aligned-project-info > a, .right-aligned-project-info > a {
     font-size: 24px;
     text-align: center;
     margin-top: 10%;
@@ -500,6 +502,7 @@ i {
     top: 63%;
     font-size: .8em;
   }
+
   /* .header-name {
     font-size: 1.7em;
     top: 40%;
