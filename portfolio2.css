@@ -71,6 +71,10 @@ button, button > a {
   opacity: 1;
 }
 
+.navbar-collapsed > a {
+  font-weight: bold;
+}
+
 .navbar > a, .navbar-collapsed > a {
   font-size: 24px;
   text-transform: uppercase;
@@ -358,7 +362,11 @@ i {
     position: absolute;
     display: block !important;
     right: 20px;
-    top: 13px;
+    top: 43px;
+  }
+
+  .navbar {
+    justify-content: flex-start;
   }
 
   .navbar-collapsed, .navbar-social-icons {
@@ -368,6 +376,7 @@ i {
 
   .navbar-collapsed:first-child {
     margin-top: 16px;
+    align-self: flex-start;
   }
 
   .navbar-collapsed > a {
