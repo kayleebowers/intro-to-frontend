@@ -358,6 +358,10 @@ i {
   .navbar > a:first-child, .menu-icon {
     margin: 30px;
   }
+
+  .navbar-responsive {
+    border: 1px solid red;
+  }
 }
 
 @media all and (max-width: 500px) {
