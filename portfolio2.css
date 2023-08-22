@@ -151,6 +151,10 @@ button, button > a {
   padding: 0 0 3% 3%;
 }
 
+.about-me-buttons > button {
+  margin-right: 10px;
+}
+
 /* skills grid */
 
 .skills {
@@ -477,7 +481,7 @@ footer > h3 {
   }
 
   /* about me */
-  
+
   .about-me-image {
     width: 100%;
     padding: 3% 0;
