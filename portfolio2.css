@@ -476,9 +476,20 @@ footer > h3 {
     font-size: 1.4em;
   }
 
+  /* about me */
+  
   .about-me-image {
     width: 100%;
     padding: 3% 0;
+  }
+
+  .about-me-buttons {
+    display: flex;
+    justify-content: center;
+  }
+
+  .about-me-buttons > button {
+    margin: 10px;
   }
 
   h2 {
@@ -548,6 +559,17 @@ footer > h3 {
   .contact-me-image, .contact-me-info  {
     width: 90%;
   }
+
+  .contact-me-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contact-me-info h2 {
+    text-align: center;
+  }
 }
 
 @media all and (max-width: 500px) {
@@ -559,11 +581,11 @@ footer > h3 {
 
   .header-name {
     font-size: 1.8em;
-    top: 53%;
+    top: 57%;
   }  
 
   .header-title {
-    top: 65%;
+    top: 69%;
     font-size: 1.1em;
   }
 }
@@ -577,11 +599,11 @@ footer > h3 {
 
   .header-name {
     font-size: 1em;
-    top: 58%;
+    top: 62%;
   }  
 
   .header-title {
-    top: 70%;
+    top: 74%;
     font-size: .8em;
   }
 
