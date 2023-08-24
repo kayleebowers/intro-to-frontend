@@ -339,23 +339,19 @@ footer > h3 {
   }
 
   .left-aligned-project-info > p {
-    width: 90%;
-    position: static;
-    text-align: center;
-    margin: 10px;
     margin-left: 0;
   }
 
   .right-aligned-project-info > p {
-    width: 90%;
-    position: static;
-    text-align: center;
-    margin: 10px;
     margin-right: 0;
   }
 
   .left-aligned-project-info > p, .right-aligned-project-info > p {
     max-width: 100%;
+    text-align: center;
+    position: static;
+    margin: 10px;
+    width: 90%;
   }
 
   .left-aligned-project-info > ul, .right-aligned-project-info > ul {
