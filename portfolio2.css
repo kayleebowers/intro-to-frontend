@@ -354,6 +354,10 @@ footer > h3 {
     margin-right: 0;
   }
 
+  .left-aligned-project-info > p, .right-aligned-project-info > p {
+    max-width: 100%;
+  }
+
   .left-aligned-project-info > ul, .right-aligned-project-info > ul {
     display: flex;
     flex-wrap: wrap;
