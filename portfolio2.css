@@ -212,6 +212,7 @@ button, button > a {
   background-color: #313F2E;
   color: white;
   position: relative;
+  max-width: 60vw;
   width: 140%;
   z-index: 3;
   padding: 4%;
