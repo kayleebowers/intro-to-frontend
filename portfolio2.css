@@ -159,6 +159,7 @@ button, button > a {
   display: flex;
   align-items: center;
   margin: 5% 0;
+  margin-bottom: 10%;
 }
 
 .right-aligned-project {
